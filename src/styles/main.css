@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Roboto";
+  src: url("public/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+* {
+  @apply font-roboto text-blue-500;
+}
+
+.button,
+.button-secondary {
+  @apply py-1 px-2;
+  @apply rounded-sm;
+  @apply font-medium;
+}
+
+.button {
+  @apply bg-blue-800;
+  @apply text-white;
+}
+
+.button-secondary {
+  @apply bg-transparent;
+  @apply border-2 border-blue-900 rounded-sm;
+  @apply text-blue-900;
+}
+
+.title {
+  @apply text-4xl text-blue-900 font-medium;
+  @apply mb-4;
+}
+
+.text {
+  @apply text-lg text-blue-500;
+}
+
+.section-double {
+  @apply flex items-center justify-center flex-nowrap;
+  @apply w-full;
+}
+.section-double .cards-container {
+  @apply mt-20;
+  @apply flex flex-nowrap gap-[30px];
+}
+.section-double .article {
+  @apply text-blue-400;
+}
+
+.card-title {
+  @apply text-base font-medium text-blue-900;
+  @apply mt-3.5 mb-1.5;
+}
+
+.card-text {
+  @apply text-xs text-grey-600;
+}
+
+html {
+  @apply bg-gray-300;
+}
+
+body {
+  @apply max-w-[1440px] mx-auto;
+  @apply bg-white;
+}
+
+.main {
+  @apply relative;
+  @apply h-[1160px] w-full;
+  background-image: url("/public/main.svg"), url("../../public/main.svg");
+  @apply bg-right bg-no-repeat bg-contain;
+  @apply px-40;
+  @apply flex items-center;
+}
+.main header {
+  @apply absolute;
+  @apply top-0 left-0;
+  @apply w-full h-[60px];
+  @apply px-40;
+  @apply flex items-center justify-between;
+}
+.main header nav {
+  @apply flex gap-16;
+}
+.main header nav .nav-link {
+  @apply text-sm;
+}
+.main header nav .nav-link:hover {
+  @apply text-blue-600;
+}
+.main header .title {
+  @apply -ml-[100px];
+  @apply mb-0;
+  @apply text-blue-600 font-black text-2xl;
+}
+.main header .button {
+  @apply w-40;
+  @apply text-xs leading-normal;
+}
+.main .container {
+  @apply max-w-[540px];
+  @apply -mt-40;
+}
+.main .container .title {
+  @apply text-5xl;
+  @apply mb-5;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main .container .text {
+  @apply mb-16;
+}
+.main .container .buttons-container {
+  @apply flex gap-8;
+}
+.main .container .buttons-container .button {
+  @apply w-48;
+}
+
+.section-1 {
+  @apply h-[742px];
+  @apply gap-[30px];
+}
+.section-1 article {
+  @apply w-[540px];
+}
+
+.section-2,
+.section-3 {
+  @apply h-[569px];
+}
+.section-2 article,
+.section-3 article {
+  @apply w-[445px];
+}
+
+.section-2 {
+  @apply gap-[155px];
+}
+
+.section-3 {
+  @apply gap-[125px];
+}
+
+.footer-border {
+  @apply relative;
+  @apply h-[60px];
+  @apply -mb-[30px];
+  @apply rounded-[100%];
+  @apply bg-white;
+}
+
+.pre-footer {
+  @apply flex items-center justify-center flex-col;
+  @apply bg-blue-100 bg-opacity-50;
+  @apply h-[744px];
+}
+.pre-footer .title {
+  @apply mb-4;
+}
+.pre-footer .text {
+  @apply w-[600px];
+  @apply mb-9;
+  @apply text-center text-blue-400 text-base;
+}
+.pre-footer .price-tag {
+  @apply text-5xl leading-snug font-medium text-blue-700;
+}
+.pre-footer .price-tag-description {
+  @apply text-blue-600 text-base;
+  @apply mb-[60px];
+}
+.pre-footer .simple {
+  @apply text-grey-600 text-sm;
+  @apply mb-2;
+}
+.pre-footer .button {
+  @apply w-[190px];
+  @apply text-sm leading-6;
+}
+
+footer {
+  @apply h-[216px];
+  @apply px-[165px];
+  @apply bg-blue-100;
+}
+footer .footer-container {
+  @apply flex justify-between items-center;
+}
+footer .footer-container-1 {
+  @apply h-[140px];
+  @apply pt-5;
+}
+footer .text {
+  @apply text-grey-400 text-sm font-medium;
+}
+footer .title {
+  @apply mb-0;
+  @apply text-blue-600 font-black text-2xl;
+}
+footer .button {
+  @apply text-xs;
+  @apply w-[110px];
+}
+footer .footer-container-2 {
+  @apply h-[76px];
+  @apply border-grey-200 border-t;
+}
+footer .footer-container-2 .links-container {
+  @apply flex gap-[60px];
+}
+footer .footer-container-2 .links-container a {
+  @apply text-sm text-blue-300;
+}
+footer .footer-container-2 .links-container a:hover {
+  @apply text-blue-400;
+}
+footer .footer-container-2 .icons-container {
+  @apply flex gap-[30px];
+}
+
+/*# sourceMappingURL=main.css.map */

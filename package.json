@@ -1,0 +1,14 @@
+{
+  "name": "landing_1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:RykeVl/landing_1.git",
+  "author": "RykeVl <iforox@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/styles/main.css -o ./src/styles/index.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.16"
+  }
+}
